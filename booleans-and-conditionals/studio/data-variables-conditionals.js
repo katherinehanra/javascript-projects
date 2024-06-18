@@ -58,9 +58,9 @@ if (preparedForLiftOff) {
   console.log("Time: ", time);
   console.log("Astronaut Count: ", astronautCount);
   console.log("Crew Mass: ", crewMassKg, "kg");
-  console.log("Fuel Mass:", fuelMassKg, "kg");
+  console.log("Fuel Mass: ", fuelMassKg, "kg");
   console.log("Shuttle Mass: ", shuttleMassKg, "kg");
-  console.log("Total Mass:", totalMassKg, "kg");
+  console.log("Total Mass: ", totalMassKg, "kg");
   console.log("Fuel Temperature: ", fuelTempCelsius, "°C");
   console.log("Weather Status: ", weatherStatus);
   console.log(
