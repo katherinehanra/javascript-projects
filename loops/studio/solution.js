@@ -14,7 +14,7 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let meals = [];
 
   /// Part A #2: Write a ``for`` loop inside this function
-  /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
+  /// Code your solution for part A #2 below this comment (and above the return statement) ... ////
 for (i=0; i<(numMeals); i++) {
   meals.push([protein[i], grains[i], veggies[i], beverages[i], desserts[i]]);
 }
