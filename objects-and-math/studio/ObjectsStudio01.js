@@ -6,8 +6,6 @@ function selectRandomEntry(arr) {
   return arr[index];
 }
 
-//console.log(selectRandomEntry(idNumbers));
-
 let threeRandomEntries = [];
 
 while (threeRandomEntries.length < 3) {
@@ -16,25 +14,18 @@ while (threeRandomEntries.length < 3) {
     threeRandomEntries.push(newRecruit);
   }
 }
-//console.log(threeRandomEntries);
 
 // Code your buildCrewArray function here:
-let animals = [
-  candidateA,
-  candidateB,
-  candidateC,
-  candidateD,
-  candidateE,
-  candidateF,
-];
 
-let crewArr = []
-
-function crewFunction(arr1, arr2) {
-  for (item in animals){
-    if (crewArr[property].astronautID === threeRandomEntries[i])
+function buildCrewArray(selectedIds, candidates) {
+  let crew = [];
+  for (let i = 0; i < candidates.length; i++) {
+    if (threeRandomEntries.includes(candidates[i].astronautID)) {
+      crew.push(candidates[i]);
+    }
   }
-};
+  return crew;
+}
 
 // Here are the candidates and the 'animals' array:
 let candidateA = {
@@ -92,5 +83,23 @@ let candidateF = {
   astronautID: 890,
 };
 
+let animals = [
+  candidateA,
+  candidateB,
+  candidateC,
+  candidateD,
+  candidateE,
+  candidateF,
+];
 
 // Code your template literal and console.log statements:
+
+console.log(selectRandomEntry(idNumbers));
+
+console.log(threeRandomEntries);
+
+let selectedCrew = buildCrewArray(threeRandomEntries, animals);
+
+console.log(
+  `${selectedCrew[0].name}, ${selectedCrew[1].name}, and ${selectedCrew[2].name} are going to space!`
+);
