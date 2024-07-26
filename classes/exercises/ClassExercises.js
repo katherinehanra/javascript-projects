@@ -107,4 +107,4 @@ let book2 = new Manual(
 // book2.dispose(book2);
 // book1.dispose(2014);
 
-// console.log(book1, book2);
+console.log(book1, book2);
