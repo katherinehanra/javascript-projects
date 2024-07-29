@@ -20,6 +20,4 @@ function whoWon(player1, player2) {
 
 console.log(whoWon("rock", "rock"));
 
-module.exports = {
-  whoWon: whoWon,
-};
+module.exports = whoWon;
